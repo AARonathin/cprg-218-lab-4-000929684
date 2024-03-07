@@ -1,0 +1,33 @@
+.remove-assignment-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-container {
+  background-color: #403d58;
+  color: #fff;
+  height: 100vh;
+}
+
+.content-container {
+  background-color: #4d5ccc;
+  height: 600px;
+}
+
+.accordion-container {
+  background-color: #fc7753;
+  color: #fff;
+  height: 600px;
+}
+
+.footer-container {
+  background-color: #f2efea;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
