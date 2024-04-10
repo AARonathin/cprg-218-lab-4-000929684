@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var acc = document.getElementsByClassName("accordion");
-  var i;
+  var accordions = document.getElementsByClassName("accordion");
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    });
+  for (var i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+          } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+      });
   }
 });
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -22,7 +21,7 @@ const today = new Date();
 const formattedDate = today.toISOString().split('T')[0];
 
 
-// Your NASA API key
+// NASA API key
 const apiKey = '1t1z9mKYxgafOVJjT4Rd9WZeH5hDTFCFGMmxbZYP';
 
 // The APOD API URL
@@ -59,4 +58,5 @@ fetch(url)
     accordionContainer.style.backgroundPosition = 'center'; // Center the background image
 })
 .catch(error => console.error('Error:', error));
+
 

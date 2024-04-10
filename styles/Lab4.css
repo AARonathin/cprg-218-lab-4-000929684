@@ -155,6 +155,7 @@
   .accordion-container {
     font-family: 'Kode Mono', monospace;
     font-weight: 700;
+    overflow: auto;
   }
   
   .accordion-container > *:not(.accordion-background) {
@@ -175,6 +176,11 @@
     transition: 0.4s;
     font-family: 'Kode Mono', monospace;
   }
+ 
+  .accordion.active + .panel {
+    color: #fff; /* Or any other color you prefer for the text */
+    background-color: #858585c9; /* Or any other background color you prefer */
+}
   
   .accordion:after {
     content: '\002B'; /* Unicode character for "plus" sign (+) */
@@ -238,6 +244,7 @@
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-family: 'Kode Mono' , monospace;
 }
 
 .footer-links ul li a:hover {
