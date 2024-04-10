@@ -178,8 +178,8 @@
   }
  
   .accordion.active + .panel {
-    color: #fff; /* Or any other color you prefer for the text */
-    background-color: #858585c9; /* Or any other background color you prefer */
+    color: #fff; 
+    background-color: #858585c9; 
 }
   
   .accordion:after {
